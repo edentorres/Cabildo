@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!-- para ue no se pueda hacer zoom -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
+	<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript">
+			var cual = window.location.href.split("=")[1];
+
+			$(function () {
+				$("#nombre").text(bioNombres[cual]);
+
+				$("#texto").text(biografias[cual]);
+
+			});
+		</script>
+		<script src="biografias.js"></script>
+		<style type="text/css">
+			.nombre {
+				margin-bottom: 0px;
+				font-size: 20px;
+				padding: 10px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row" id="header">
+				<div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-2">
+					<img height="70" width="105" style="margin-top: 10px;" src="cuadro.png" id="menu" onclick="window.history.back();">
+				</div>
+				<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-9 col-xs-offset-1 col-xs-9">
+					<h1 id="nombre"> Biografias </h1>
+				</div>
+			</div>
+
+			<br/>
+
+			<div class="row">
+				<div id="txt" class="col-md-12 col-sm-12 col-xs-12" > <p id="texto" style="padding: 10px; width: 100%; word-wrap: normal;"> </p> </div>
+			</div>
+		</div>
+	</body>
+</html>

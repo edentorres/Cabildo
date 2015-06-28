@@ -1,0 +1,75 @@
+body {background: 
+	url(fondo.png) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+@font-face /*font title*/ {
+    font-family: 'coolvetica rg'; /*a name to be used later*/
+
+    src: url('font/coolvetica rg.ttf'); /*URL to font*/
+}
+
+@font-face /*font title*/ {
+    font-family: 'Gravity-Book'; /*a name to be used later*/
+
+    src: url('font/Gravity-Book.ttf'); /*URL to font*/
+}
+
+@font-face /*font title*/ {
+    font-family: 'helvari'; /*a name to be used later*/
+
+    src: url('font/helvari.ttf'); /*URL to font*/
+}
+
+h1 {
+	font-family: "coolvetica rg";
+	font-size: 36px ;
+
+}
+
+h3 {
+	font-family: "coolvetica rg";
+	font-size: 28px;
+}
+
+p {
+  font-family: "helvari";
+  font-size: 18px ;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: auto !important;
+  max-height: 75%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+.nombre.bg-success {
+  color:#333;
+  background-color: #F0EAC4;
+}
+
+.creditos-list {
+  width: 100%; 
+  text-align: center;
+  height: 80%; 
+  overflow: scroll; 
+  list-style-type: none; 
+  text-align: center;
+}
+
+.creditos-list p {
+  background-color: transparent;
+}
+
+.creditos-list h4 {
+  font-size: 25px;
+  color: #DED59E;
+}
+
+
+
+
+

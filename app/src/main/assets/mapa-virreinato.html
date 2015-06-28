@@ -1,0 +1,239 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!-- para ue no se pueda hacer zoom -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript">
+
+			$(function () {
+				size();
+				$(window).resize(size());
+
+				function size() {
+					$(".mapa").height($(".mapa").width() -10);	
+					$("#texto").height($(".mapa").height() - $("#titulo").height());
+				}
+
+				/*$(".mapa").click(function () {
+					$("#texto").text( mapasInfo[cgdc] );
+					$("#titulo").text( cgdc );
+				});*/
+
+				/*$(".ne").css("opacity", "0.5");
+				$(".ne").css("background", "white");
+
+				$(".ng").css("opacity", "0.5");
+				$(".ng").css("background", "green");
+				
+				$(".vp").css("opacity", "0.5");
+				$(".vp").css("background", "blue");
+				
+				$(".peru").css("opacity", "0.5");
+				$(".peru").css("background", "yellow");
+				
+				$(".chile").css("opacity", "0.5");
+				$(".chile").css("background", "red");*/
+				
+				$(".ne").click(function () {
+					$("#texto").show();
+
+					$("#texto").text( mapasInfo[ne] );
+					$("#titulo").text( ne );
+			    });
+				
+				$(".ng").click(function () {
+
+					$("#texto").show();
+					$("#texto").text( mapasInfo[ng] );
+					$("#titulo").text( ng );
+			    });
+				
+				$(".vp").click(function () {
+					$("#texto").show();
+
+					$("#texto").text( mapasInfo[rdp] );
+					$("#titulo").text( rdp );
+			    });
+				
+				$(".peru").click(function () {
+					$("#texto").show();
+
+					$("#texto").text( mapasInfo[dp] );
+					$("#titulo").text( dp );
+			    });
+				
+				$(".chile").click(function () {
+					$("#texto").show();
+					
+					$("#texto").text( mapasInfo[cgdc] );
+					$("#titulo").text( cgdc );
+			    });
+			});
+		</script>
+		<script src="mapas/mapas-info.js"></script>
+		<style type="text/css">
+			.nombre {
+				margin-bottom: 0px;
+				font-size: 20px;
+				padding: 10px;
+				padding-bottom: 0px;
+				text-align: center;
+			}
+			.mapa {
+				width: 100%;	
+			}
+		#apDiv1 {
+				position: absolute;
+				width: 200px;
+				height: 120px;
+				z-index: 1;
+				left: 60px;
+				top: 0px;
+			}
+			        #apDiv2 {
+				  position: absolute;
+				  width: 133px;
+				  height: 80px;
+				  z-index: 2;
+				  left: 200px;
+				  top: 120px;
+			}
+			        #apDiv3 {
+				  position: absolute;
+				  width: 133px;
+				  height: 66px;
+				  z-index: 4;
+				  left: 200px;
+				  top: 200px;
+			}
+			        #apDiv4 {
+				position: absolute;
+			  width: 133px;
+			  height: 55px;
+			  z-index: 4;
+			  left: 199px;
+			  top: 200px;
+			}
+			        #apDiv5 {
+				  position: absolute;
+				  width: 13px;
+				  height: 116px;
+				  z-index: 5;
+				  left: 231px;
+				  top: 300px;
+			}
+			        #apDiv6 {
+				  position: absolute;
+				  width: 71px;
+				  height: 163px;
+				  z-index: 6;
+				  left: 244px;
+				  top: 255px;
+			}
+			        #apDiv7 {
+				position: absolute;
+				  width: 50px;
+				  height: 45px;
+				  z-index: 7;
+				  left: 235px;
+				  top: 255px;
+			}
+			        #apDiv8 {
+				position:absolute;
+				width:86px;
+				height:13px;
+				z-index:8;
+				left: 597px;
+				top: 504px;
+			}
+			        #apDiv9 {
+				position:absolute;
+				width:180px;
+				height:115px;
+				z-index:9;
+				left: 606px;
+				top: 621px;
+			}
+			        #apDiv10 {
+				position:absolute;
+				width:11px;
+				height:65px;
+				z-index:10;
+				left: 594px;
+				top: 643px;
+			}
+			        #apDiv11 {
+				position:absolute;
+				width:181px;
+				height:115px;
+				z-index:11;
+				left: 606px;
+				top: 738px;
+			}
+			        #apDiv12 {
+				position:absolute;
+				width:23px;
+				height:51px;
+				z-index:12;
+				left: 606px;
+				top: 855px;
+			}
+			        #apDiv13 {
+				position:absolute;
+				width:40px;
+				height:191px;
+				z-index:13;
+				left: 564px;
+				top: 714px;
+			}
+        </style>
+	</head>
+<body>
+		<div class="container-fluid">
+			<div class="row" id="header">
+				<div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-2">
+					<img height="70" width="105" style="margin-top: 10px;" src="mapas/menu.png" id="menu" onClick="window.history.back();">
+				</div>
+				<div class="col-md-offset-3 col-md-7 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
+					<h1 id="nombre"> Virreinatos </h1>
+				</div>
+			</div>
+
+			<br/>
+
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<!--<div id="apDiv1" class="ne"></div>
+					<div id="apDiv2" class="ne"></div>
+					<div id="apDiv3" class="ne"></div>
+					<div id="apDiv4" class="ng"></div>
+					<div id="apDiv5" class="ng"></div>
+					<div id="apDiv6" class="peru"></div>
+					<div id="apDiv7" class="peru"></div>
+					<div id="apDiv8" class="peru"></div>
+					<div id="apDiv9" class="vp"></div>
+					<div id="apDiv10" class="vp"></div>
+					<div id="apDiv11" class="vp"></div>
+					<div id="apDiv12" class="vp"></div>
+					<div id="apDiv13" class="chile"></div>-->
+					<div id="apDiv1" class="ne"></div>
+					<div id="apDiv2" class="ng"></div>
+					<div id="apDiv4" class="peru"></div>
+					<div id="apDiv5" class="chile"></div>
+					<div id="apDiv6" class="vp"></div>
+					<div id="apDiv7" class="vp"></div>
+					<img class="mapa" src="mapas/america.png">
+					<!-- el rio de la plata direcciona atras-->
+    </div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+
+					<h3 id="titulo" style="margin: 0px; margin-bottom: 5px">  </h3>
+					<p hidden id="texto" style="height:100%; overflow: scroll; padding: 10px; padding-top: 0px; width: 100%; word-wrap: normal;">
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

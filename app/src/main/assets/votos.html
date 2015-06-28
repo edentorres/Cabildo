@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!-- para ue no se pueda hacer zoom -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript">
+			$(function(){
+
+				$("#menu").click(function () {
+					window.history.back();
+				});
+			});
+		</script>
+		<style type="text/css">
+			.nombre {
+				margin-bottom: 0px;
+				font-size: 20px;
+				padding: 10px;
+				text-align: center;
+			}
+			.img {
+				padding: 0px;
+				width: 100%;
+				height: auto;
+			}
+			.ima{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row" id="header">
+				<div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-2">
+					<img height="70" width="105" style="margin-top: 20px;" src="cuadro.png" id="menu" onclick="window.history.back();">
+				</div>
+				<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-9 col-xs-offset-1 col-xs-9">
+					<h1 id="nombre"> Concurrentes y votos</h1>
+				</div>
+			</div>
+
+			<br/>
+
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12" id="texto" >
+							<p style="height: 75%; overflow: scroll; padding: 10px; padding-top: 0px; width: 100%; word-wrap: normal;">
+								Obispo Lu&eacute; y Riega: "...no solamente no hay por que hacer novedad con el virrey sino que a&uacute;n cuando no quedase parte alguna de la Espa&ntilde;a que no estuviese subyugada los espa&ntilde;oles que se encuentran en las Am&eacute;ricas deber&iacute;an tomar y asumir el mando de ellas; este solo podr&aacute; venir a manos de los hijos del pa&iacute;s, cuando ya no quede un solo espa&ntilde;ol en &eacute;l..." En la versi&oacute;n de un cronista an&oacute;nimo, el obispo resulta m&aacute;s concreto: "...Aunque haya quedado un solo vocal - habr&iacute;a dicho - y arribase a nuestras playas, lo deber&iacute;amos recibir como a la Soberan&iacute;a..."
+								Replica Castelli: "...Desde que el se&ntilde;or Infante Don Antonio (un t&iacute;o de Fernando VII a quien &eacute;ste confi&oacute; la presidencia de la Junta Suprema de Gobierno) sali&oacute; de Madrid (obligado por los franceses), ha caducado el gobierno soberano de Espa&ntilde;a - comienza diciendo Castelli -.  Ahora con mayor raz&oacute;n debe considerarse que ha expirado con la disoluci&oacute;n de la Junta Central, por que adem&aacute;s de haber sido acusada de infidencia por el pueblo de Sevilla, no ten&iacute;a facultades para establecer el Supremo Gobierno de Regencia, ya porque los poderes de sus vocales eran personal&iacute;simos para el gobierno y no pod&iacute;an delegarse, y ya  por falta de concurrencia de los diputados de Am&eacute;rica en la elecci&oacute;n y establecimiento de aquel gobierno, que es por lo tanto ileg&iacute;timo. Los derechos de la soberan&iacute;a han revertido al pueblo de Buenos Aires que puede ejercerlos libremente en la instalaci&oacute;n de un nuevo gobierno, principalmente no existiendo ya, como se supone no existir, la Espa&ntilde;a en la dominaci&oacute;n del se&ntilde;or Don Fernando S&eacute;ptimo..."
+								Tras el discurso de Castelli, replica el fiscal Villota: "...En las circunstancias de apuro en que se hizo el nombramiento de la Regencia, solo en la Junta Central pueden reunirse los votos de todas las provincias y la facultad para la elecci&oacute;n; cualquier defecto que se pueda notar en esta, los subsana el reconocimiento posterior de los pueblos; el de Buenos Aires no tiene por s&iacute; solo derecho alguno a decidir sobre la legitimidad del Gobierno de Regencia sino en uni&oacute;n de toda la representaci&oacute;n nacional, y mucho menos a elegirse un gobierno soberano, que ser&iacute;a lo mismo que romper la unidad de la Naci&oacute;n  y establecer en ella tantas soberan&iacute;as como pueblos..."
+								No todo est&aacute; perdido para los patricios, aparece entonces Juan Jos&eacute; Paso: "...Dice muy bien el se&ntilde;or Fiscal, que debe ser consultada la voluntad general de los dem&aacute;s pueblos del Virreinato pero pi&eacute;nsese bien que el actual estado de peligros a que por su situaci&oacute;n local se ve envuelta esta capital, ni es prudente ni conviene el retardo que importa el plan que propone. Buenos Aires necesita con mucha urgencia ponerse a cubierto de los peligros que la amenazan, por el poder de la Francia y el triste estado de la Pen&iacute;nsula. Para ello, una de las primeras medidas debe ser la inmediata formaci&oacute;n de la junta provisoria de gobierno a nombre del se&ntilde;or Don Fernando VII; y que ella proceda sin demora a invitar a los dem&aacute;s pueblos del Virreinato a que concurran por sus representantes a la formaci&oacute;n del gobierno permanente..."
+								El fiscal Villota interviene entonces nuevamente y, con voz entrecortada, echa en cara a los porte&ntilde;os su desapego a la doliente Espa&ntilde;a: "...Es muy doloroso que en la ocasi&oacute;n de su mayor amargura, trate Buenos Aires de afligirla con una novedad de esta clase, oscureciendo por una equivocaci&oacute;n de concepto las glorias que ten&iacute;a adquiridas..."
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="container-fluid">
+					<div style="overflow: scroll; height: 75%;" id="imagenes">
+						<div class="row img">
+							<img class="ima" id="img1" src="graficos/edades.png">
+						</div>
+						<div class="row img">
+							<img class="ima" src="graficos/nacimiento.png">
+						</div>
+						<div class="row img">
+							<img class="ima" src="graficos/votos.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

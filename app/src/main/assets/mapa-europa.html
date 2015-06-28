@@ -1,0 +1,234 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!-- para ue no se pueda hacer zoom -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+		<script type="text/javascript">
+
+			$(function () {
+				size();
+				$(window).resize(size());
+
+				function size() {
+					$(".mapa").height($(".mapa").width() -10);	
+					$("#texto").height($(".mapa").height() - $("#titulo").height());
+				}
+
+				/*$(".port").css("opacity", "0.5");
+				$(".port").css("background", "white");
+
+				$(".esp").css("opacity", "0.5");
+				$(".esp").css("background", "green");
+				
+				$(".fra").css("opacity", "0.5");
+				$(".fra").css("background", "blue");
+				
+				$(".uk").css("opacity", "0.5");
+				$(".uk").css("background", "yellow");
+				
+				$(".ger").css("opacity", "0.5");
+				$(".ger").css("background", "red");
+				
+				$(".it").css("opacity", "0.5");
+				$(".it").css("background", "black");
+				
+				$(".au").css("opacity", "0.5");
+				$(".au").css("background", "orange");
+				
+				$(".rus").css("opacity", "0.5");
+				$(".rus").css("background", "pink");*/
+
+
+				
+				$(".port").click(function () {
+					$("#texto").text( mapasInfo[pu] );
+					$("#titulo").text( pu );
+
+					$("#texto").show();
+			    });
+
+				$(".esp").click(function () {
+					$("#texto").text( mapasInfo[es] );
+					$("#titulo").text( es );
+					$("#texto").show();
+			    });
+
+				$(".fra").click(function () {
+					$("#texto").text( mapasInfo[fr] );
+					$("#titulo").text( fr );
+					$("#texto").show();
+			    });
+
+				$(".uk").click(function () {
+					$("#texto").text( mapasInfo[gb] );
+					$("#titulo").text( gb );
+					$("#texto").show();
+			    });
+
+				$(".ger").click(function () {
+					$("#texto").text( mapasInfo[ea] );
+					$("#titulo").text( ea );
+					$("#texto").show();
+			    });
+
+				$(".it").click(function () {
+					$("#texto").text( mapasInfo[ei] );
+					$("#titulo").text( ei );
+					$("#texto").show();
+			    });
+
+				$(".au").click(function () {
+					$("#texto").text( mapasInfo[aus] );
+					$("#titulo").text( aus );
+					$("#texto").show();
+			    });
+
+				$(".rus").click(function () {
+					$("#texto").text( mapasInfo[ru] );
+					$("#titulo").text( ru );
+					$("#texto").show();
+			    });
+			});
+		</script>
+		<script src="mapas/mapas-info.js"></script>
+		<style type="text/css">
+			.nombre {
+				margin-bottom: 0px;
+				font-size: 20px;
+				padding: 10px;
+				padding-bottom: 0px;
+				text-align: center;
+			}
+			.mapa {
+				width: 100%;	
+			}
+
+			#apDiv1 {
+				position: absolute;
+				  width: 48px;
+				  height: 120px;
+				  z-index: 1;
+				  left: 18px;
+				  top: 270px;
+			}
+			        #apDiv2 {
+				  position: absolute;
+				  width: 87px;
+				  height: 132px;
+				  z-index: 4;
+				  left: 68px;
+				  top: 271px;
+			}
+			        #apDiv3 {
+				  position: absolute;
+				  width: 147px;
+				  height: 193px;
+				  z-index: 3;
+				  left: 106px;
+				  top: 171px;
+			}
+			        #apDiv4 {
+				  position: absolute;
+				  width: 162px;
+				  height: 152px;
+				  z-index: 1;
+				  left: 34px;
+				  top: 11px;
+			}
+			        #apDiv5 {
+				    position: absolute;
+					  width: 58px;
+					  height: 226px;
+					  z-index: 11;
+					  left: 387px;
+					  top: 79px;
+			}
+			        #apDiv6 {
+				  position: absolute;
+				  width: 71px;
+				  height: 117px;
+				  z-index: 2;
+				  left: 317px;
+				  top: 151px;
+			}
+			        #apDiv7 {
+			  position: absolute;
+			  width: 80px;
+			  height: 35px;
+			  z-index: 3;
+			  left: 173px;
+			  top: 151px;
+			}
+			        #apDiv8 {
+				  position: absolute;
+				  width: 60px;
+				  height: 64px;
+				  z-index: 3;
+				  left: 193px;
+				  top: 88px;
+			}
+			        #apDiv9 {
+				  position: absolute;
+				  width: 180px;
+				  height: 170px;
+				  z-index: 1;
+				  left: 252px;
+				  top: 86px;
+			}
+			        #apDiv10 {
+				  position: absolute;
+				  width: 148px;
+				  height: 160px;
+				  z-index: 10;
+				  left: 296px;
+				  top: 255px;
+			}
+			        #apDiv11 {
+				position:absolute;
+				width:11px;
+				height:65px;
+				z-index:10;
+				left: 100px;
+				top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row" id="header">
+				<div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-2">
+					<img height="70" width="105" style="margin-top: 10px;" src="mapas/menu.png" id="menu" onclick="window.history.back();">
+				</div>
+				<div class="col-md-offset-3 col-md-2 col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-2">
+					<h1 id="nombre"> Europa </h1>
+				</div>
+			</div>
+
+			<br/>
+
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div id="apDiv1" class="port"></div>
+					<div id="apDiv2" class="esp"></div>
+					<div id="apDiv3" class="fra"></div>
+					<div id="apDiv4" class="uk"></div>
+					<div id="apDiv5" class="rus"></div>
+					<div id="apDiv6" class="au"></div>
+					<div id="apDiv7" class="fra"></div>
+					<div id="apDiv8" class="fra"></div>
+					<div id="apDiv9" class="ger"></div>
+					<div id="apDiv10" class="it"></div>
+					<img class="mapa" src="mapas/europa.png">
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+
+					<h3 id="titulo" style="margin: 0px; margin-bottom: 5px">  </h3>
+					<p hidden id="texto" style="height:100%; overflow: scroll; padding: 10px; padding-top: 0px; width: 100%; word-wrap: normal;">
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

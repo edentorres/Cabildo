@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!-- para ue no se pueda hacer zoom -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript">
+
+			$(function () {
+				size();
+				$(window).resize(size());
+
+				function size() {
+					$(".mapa").height($(".mapa").width() -10);	
+				}
+			});
+		</script>
+		<style type="text/css">
+			.nombre {
+				margin-bottom: 0px;
+				font-size: 20px;
+				padding: 10px;
+				padding-bottom: 0px;
+				text-align: center;
+			}
+			.mapa {
+				width: 100%;	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row" id="header">
+				<div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-2">
+					<img height="70" width="105" style="margin-top: 10px;" src="cuadro.png" id="menu" onclick="window.history.back();">
+				</div>
+				<div class="col-md-offset-3 col-md-2 col-sm-offset-2 col-sm-2 col-xs-offset-2 col-xs-2">
+					<h1 id="nombre"> Mapas </h1>
+				</div>
+			</div>
+
+			<br/>
+
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<a href="mapa-virreinato.html">
+						<img class="mapa" src="mapas/america.png">
+					</a>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<a href="mapa-europa.html">
+						<img class="mapa" src="mapas/europa.png">
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
